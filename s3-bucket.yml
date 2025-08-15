@@ -1,16 +1,11 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Create or update an S3 bucket
 
-Parameters:
-  BucketName:
-    Type: String
-    Description: Name of the S3 bucket
-
 Resources:
   MyS3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Ref BucketName
+      BucketName: cicdbuckets3biva
       VersioningConfiguration:
         Status: Enabled
       PublicAccessBlockConfiguration:
