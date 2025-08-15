@@ -5,7 +5,7 @@ Resources:
   MyS3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: cicdbuckets3biva
+      BucketName: cicdbuckets3biva-202515
       VersioningConfiguration:
         Status: Enabled
       PublicAccessBlockConfiguration:
